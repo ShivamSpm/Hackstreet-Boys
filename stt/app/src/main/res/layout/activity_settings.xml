@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:id="@+id/drawerLayout">
+
+
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_nav_side"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
+
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/NavBot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            design:menu="@menu/menu_nav" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/TxtSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="settings"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"
+            android:textColor="#000000"
+
+            />
+
+        <Switch
+            android:id="@+id/simpleSwitch1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Formating"
+            android:layout_below="@+id/TxtSetting"
+            android:padding="@dimen/fab_margin"
+            android:checked="true"
+            android:gravity="left"
+            />
+
+        <Switch
+            android:id="@+id/simpleSwitch2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Summarise"
+            android:layout_below="@+id/simpleSwitch1"
+            android:padding="@dimen/fab_margin"
+            android:checked="true"
+            android:gravity="left"
+            />
+
+        <Switch
+            android:id="@+id/simpleSwitch3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Store Audio"
+            android:layout_below="@+id/simpleSwitch2"
+
+            android:padding="@dimen/fab_margin"
+            android:checked="false"
+            android:gravity="left"
+            />
+
+        <Switch
+            android:id="@+id/simpleSwitch4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Differentiate Speakers"
+            android:layout_below="@+id/simpleSwitch3"
+            android:padding="@dimen/fab_margin"
+            android:checked="true"
+            android:gravity="left"
+
+            />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+

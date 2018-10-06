@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Logs"
+        android:id="@+id/logs"
+        android:icon="@drawable/ic_logs"
+        />
+
+    <item
+        android:title="To-Do"
+        android:id="@+id/todo"
+        android:icon="@drawable/ic_todo"
+        />
+ <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item
+        android:title="Calendar"
+        android:id="@+id/calendar"
+        android:icon="@drawable/ic_today"
+        />
+
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        />
+
+</menu>
